@@ -18,8 +18,8 @@ This system validates which YouTubers are truly "human indicators" by backtestin
 
 ```
 Researcher Agent ──→ Analyst Agent ──→ Portfolio Manager
+     ▲                    ▲                    ▲
      │                    │                    │
-     ▼                    ▼                    ▼
 YouTube MCP         Polygon API        Accounts DB
 ```
 
@@ -36,7 +36,7 @@ YouTube MCP         Polygon API        Accounts DB
 - **MCP (Model Control Protocol)** (Agent Communication)
 - **YouTube API** / **Polygon.io API** (Data Sources)
 - **SQLite** (Database)
-- **LangSmith** (Monitoring)
+- **OpenAI Trace Dashboard** (Monitoring)
 
 ## Installation & Usage
 
@@ -130,10 +130,15 @@ sqlite3 accounts.db "SELECT * FROM accounts;"
 sqlite3 accounts.db "SELECT * FROM analyzed_videos ORDER BY created_at DESC LIMIT 10;"
 ```
 
-### LangSmith Dashboard
+### OpenAI Trace Dashboard
 - AI agent execution tracking
 - Performance monitoring
 - Error debugging
+
+## References
+
+- [The Complete Agentic AI Engineering Course](https://edwarddonner.com/2025/04/21/the-complete-agentic-ai-engineering-course/) - Comprehensive guide to building AI agent systems
+- [YouTube MCP Toolbox](https://smithery.ai/server/@jikime/py-mcp-youtube-toolbox) - MCP server for YouTube video analysis and transcript extraction
 
 ## Disclaimer
 
